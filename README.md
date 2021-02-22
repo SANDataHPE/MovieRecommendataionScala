@@ -1,5 +1,7 @@
 # Movie Recommendation System
-Movie Rating with Collaborative Filtering.   Featuring two ways of implementation -
+Movie Rating with Collaborative Filtering.   
+
+### Spark Submit
 ```shell
 spark-submit --master yarn-client --class org.apache.spark.examples.MovieRecommendation movie-recommendation-1.0-SNAPSHOT-jar-with-dependencies.jar  ratings.csv movies.csv batch_2.csv 999 <path-to-store-model>
 ```
