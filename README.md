@@ -76,8 +76,7 @@ The best model improves the baseline by 77.77%.
 
 ### Reference  ###
 * [Collaborative Filtering - spark.mllib](http://spark.apache.org/docs/latest/mllib-collaborative-filtering.html)
-* [Source code of Databricks ML training on ALS](https://github.com/databricks/spark-training/blob/master/machine-learning/scala/solution/MovieLensALS.scala)
-* [Spark summit 2014 Hands-on Exercises](https://databricks-training.s3.amazonaws.com/index.html)
+
 
 
 
