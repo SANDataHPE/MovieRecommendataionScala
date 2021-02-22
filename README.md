@@ -3,7 +3,7 @@ Movie Rating with Collaborative Filtering.   Featuring two ways of implementatio
 
   - run on large dataset :
 ```shell
-spark-submit --master yarn-client --class io.bittiger.movierating.hollywood.MovieRater hollywood-1.0-SNAPSHOT-jar-with-dependencies.jar  /tmp/mydata/movielens/big/ratings.csv /tmp/mydata/movielens/small/movies.csv /tmp/mydata/movielens/user-profile/batch_2.csv 999
+spark-submit --master yarn-client --class org.apache.spark.examples.MovieRecommendation movie-recommendation-1.0-SNAPSHOT-jar-with-dependencies.jar  ratings.csv movies.csv batch_2.csv 999 <path-to-store-model>
 ```
 
 ### Result example
