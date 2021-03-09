@@ -26,9 +26,9 @@ object MovieRecommendation {
   }
   
   def main(args: Array[String]): Unit = {
-    Logger.getLogger("org").setLevel(Level.OFF)
-    Logger.getLogger("akka").setLevel(Level.OFF)
-    Logger.getRootLogger.setLevel(Level.WARN)
+    // Logger.getLogger("org").setLevel(Level.OFF)
+    // Logger.getLogger("akka").setLevel(Level.OFF)
+    // Logger.getRootLogger.setLevel(Level.WARN)
     
     if (args.length != 5) {
       println("Usage: spark-submit --master yarn-client --class org.apache.spark.examples.MovieRater " +
@@ -194,6 +194,6 @@ object MovieRecommendation {
     model.save(sc, modelLocation)
     println("=================>>>> Finished... <<<<=====================")
     println("========================== COMPLETED ==============================")
-
+    sc.stop()
 }
 }
