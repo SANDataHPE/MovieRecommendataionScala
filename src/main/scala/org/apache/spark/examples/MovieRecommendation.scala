@@ -194,6 +194,6 @@ object MovieRecommendation {
     model.save(sc, modelLocation)
     println("=================>>>> Finished... <<<<=====================")
     println("========================== COMPLETED ==============================")
-
+    sc.stop()
 }
 }
